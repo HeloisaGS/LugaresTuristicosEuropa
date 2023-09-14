@@ -1,0 +1,101 @@
+/*
+    No projeto anterior, criou uma página apresentando pontos turísticos.
+    A partir disso, desenvolva um arquivo para armazenar as configurações de estilo que serão utilizadas na página HTML.
+
+    Utilize IDs para aplicar efeitos nos títulos e crie uma classe para estilizar um elemento específico da página.
+
+    Certifique-se de aplicar esses estilos de forma coesa e esteticamente agradável no site
+*/
+
+/*Zerando todas as margens e paddings*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, sans-serif;
+    color: #362040;
+}
+
+/*Cabeçalho*/
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+header ul{
+    background-color: #C4FFB2;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    box-sizing: inherit; 
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
+header ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #5D3870;
+    
+}
+header ul li a:hover{
+    color:#7D82B8
+}
+/* Efeitos no Titulo  do cabeçalho*/
+#titulo-header{
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #5D3870;
+    text-shadow: 1px 1px rgba(125, 130, 184, 0.5);
+}
+
+
+/*Corpo*/
+main{
+    margin: 0 10%;
+}
+
+.cidade{
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: justify;
+}
+
+h2{
+    margin-bottom: 10px;
+}
+/*Efeitos de ID nos títulos H2*/
+#roma, #paris, #londres, #amsterdam, #barcelona{
+    color: #5D3870;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px rgba(125, 130, 184, 0.5);
+}
+
+/*Estilizações de elementos por meio das classes*/
+.ponto-turistico{
+    display: flex;
+    align-items: center ;
+}
+.ponto-turistico div{
+    width: 50%;
+    margin: 3%;
+}
+.ponto-turistico div img{
+    width: 90%;
+    border: 1px solid #7D82B8;
+    border-radius: 5px;
+}
+.info-turismo{
+    text-align: justify;
+}
+.info-turismo h3{
+    text-align: center;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px rgba(125, 130, 184, 0.5);
+}
+.lista-corpo{
+    list-style-type: square;
+    padding-left: 40px;
+    margin: 10px 0px;
+}
